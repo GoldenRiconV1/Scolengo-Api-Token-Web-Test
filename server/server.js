@@ -4,7 +4,7 @@ import cors from 'cors';
 import path from 'path';
 
 const app = express();
-const CAS_CALLBACK = 'http://localhost:3000/auth/callback';
+const CAS_CALLBACK = 'https://github.com/GoldenRiconV1/Scolengo-Api-Token-Web-Test.git/auth/callback'; //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 app.use(cors());
 app.use(express.json());
