@@ -1,0 +1,19 @@
+<script>
+    const auth = document.getElementById('auth')
+    const dllink = document.querySelector('.dllink')
+  
+    const urlParams = new URLSearchParams(window.location.search)
+    const data = JSON.parse(decodeURIComponent(urlParams.get("data")))
+    const formattedJSON = JSON.stringify(data, null, 2)
+  
+    auth.innerText = formattedJSON
+    dllink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(formattedJSON))
+    dllink.setAttribute('download', "config.json")
+  
+    const btnCopy = document.getElementById('btn-copy')
+    btnCopy.addEventListener('click', () => {
+      btnCopy.hidden = true
+      navigator.clipboard.writeText(formattedJSON)
+    })
+  </script>
+  
