@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Sert le dossier 'public' comme répertoire statique
-app.use(express.static(path.join('D:/1LycoDrive/Test/scolengo-token-web/public')));  // Chemin absolu
+app.use(express.static(path.join('../public')));  // Chemin absolu
 
 let selectedSchool;
 let oidClient;
