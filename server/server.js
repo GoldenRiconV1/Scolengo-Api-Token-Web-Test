@@ -53,4 +53,4 @@ app.get('/', (req, res) => {
   res.sendFile('D:/1LycoDrive/Test/scolengo-token-web/public/index.html');  // Chemin absolu
 });
 
-app.listen(3000, () => console.log('Server running at http://localhost:3000'));
+app.listen(3000, () => console.log('Server running at https://github.com/GoldenRiconV1/Scolengo-Api-Token-Web-Test.git'));
